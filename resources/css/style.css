@@ -1,0 +1,486 @@
+body {
+  border: 0;
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  color: #4A4A4A;
+  background-color: #F3F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 960px;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+#header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  width: 100%;
+  background-color: white;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+.logo img {
+  height: 2rem;
+}
+
+.colmar {
+  color: #777;
+  font-weight: bold;
+}
+
+.academy {
+  color: #bbb;
+  font-weight: lighter;
+}
+
+nav {
+  display: inline-flex;
+  padding-right: 1.5rem;
+}
+
+nav a {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: grey;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width:540px) {
+	.logo, .full {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-flex;
+    align-items: center;
+    min-width: 100%;
+    padding: 0 1rem;
+  }
+
+  nav.mobile a {
+    width: 25%;
+  }
+
+}
+
+/*learn everyday banner*/
+
+#learn {
+  display: flex;
+  align-items: center;
+  background-color: #D8D8D8;
+}
+
+.largepic {
+  width: 60%;
+}
+
+.largepic img,video {
+  width: 100%;
+  background-size: cover;
+  margin: 2rem 1.5rem;
+}
+
+#headline {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 3rem;
+}
+
+#headline h1 {
+  padding-bottom: 2rem;
+}
+
+#headline h3 {
+  padding-bottom: 1.5rem;
+}
+
+#headline span {
+  text-align: center;
+  padding: 0.5rem;
+  color: white;
+  background-color: #4A4A4A;
+}
+
+@media screen and (max-width:540px) {
+	#learn {
+    flex-direction: column;
+  }
+
+  #learn .largepic {
+      width: 100%;
+  }
+
+  #learn .largepic img,video {
+    margin: 0;
+  }
+
+  #headline {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  #headline h1,h3 {
+    padding: 2rem 1.5rem 0 1.5rem;
+  }
+
+  #headline span {
+    margin: 1.5rem 1rem 2rem 1rem;
+  }
+
+}
+/*keep practicing banner*/
+
+#practice {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.practicequote {
+  padding-left: 1.5rem;
+}
+
+.practicequote h2,h5 {
+  padding-bottom: 1.5rem;
+}
+
+.info p {
+  font-size: 0.9rem;
+  color: #8EB9ED;
+}
+
+.smalltext {
+    font-size: 0.75rem;
+}
+
+#info-group {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.infopic {
+  width: 35%;
+  padding: 1rem;
+}
+
+.infopic img {
+  width: 100%;
+  height:auto;
+  background-size: cover;
+}
+
+.details {
+  width: 65%;
+  padding-right: 1rem;
+}
+
+.details h4{
+  padding-bottom: 0.5rem;
+}
+
+.highlight {
+  background-color: #EAEBEC;
+}
+
+.infopic .mobpic {
+  display: none;
+}
+
+@media screen and (max-width:540px) {
+	#practice {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  #practice .largepic {
+      display: none;
+  }
+
+  #info-group {
+    width: 100%;
+    padding: 0;
+    }
+
+  .info {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .infopic {
+    width: 90%;
+  }
+
+  .infopic img {
+    padding: 0;
+  }
+
+  .infopic .mobpic {
+    display: inline;
+    height:100%;
+  }
+
+  .infopic .fullpic {
+    display: none;
+  }
+
+  .details {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .details h4{
+    padding: 0 1rem 0 2rem;
+  }
+
+  .details h5{
+    padding: 1rem 1rem 0 2rem;
+  }
+
+  .details p {
+    padding: 1rem 1rem 2rem 2rem;
+  }
+
+  .highlight {
+    background-color: white;
+  }
+
+}
+
+/*start learning banner*/
+
+#start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EAEBEC;
+  padding: 0 4rem;
+}
+
+.title {
+  padding: 2rem 0;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.item.left {
+  margin-right: 2rem;
+}
+
+.item.right {
+  margin-left: 2rem;
+}
+
+.item {
+  padding-bottom: 1.5rem;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+.item h4 {
+  padding: 1rem 0 0 1rem;
+}
+
+.item h5 {
+  padding: 0.5rem 0 0 1rem;
+}
+
+.moblist{
+  display: none;
+}
+
+@media screen and (max-width:540px) {
+  .courses {
+    display: none;
+  }
+
+  #start {
+    padding: 0;
+  }
+
+  .moblist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 1rem 3rem;
+  }
+
+  .moblist h4 {
+    padding: 1rem 0 2.5rem 1rem;
+    width: 100%;
+    margin: 0.5rem 1rem;
+    background-color: #D8D8D8;
+  }
+
+  .title{
+    text-align: center;
+    padding: 2rem 0 1.5rem 0;
+  }
+}
+
+
+/*exhibit banner*/
+
+#exhibit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 0 4rem;
+}
+
+.exhibits {
+  display: flex;
+  align-items: stretch;
+}
+
+.exhibitsquote {
+  padding-left: 1.5rem;
+}
+
+.exhibitsquote h4,h5 {
+  padding-bottom: 1.5rem;
+}
+
+.studies {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+
+.study {
+  display: flex;
+  align-items: center;
+}
+
+.studypic {
+  width: 35%;
+  padding: 1rem;
+}
+
+.studypic img {
+  width: 100%;
+  height:auto;
+  background-size: cover;
+}
+
+.studydetails {
+  width: 65%;
+  padding-right: 1rem;
+}
+
+.studydetails h4{
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width:540px) {
+  .studies, .exhibitsquote {
+    display: none;
+  }
+
+  #exhibit {
+    padding: 0;
+  }
+
+  #exhibit .largepic {
+    width: 100%;
+    padding-bottom: 1.5rem;
+  }
+
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 0 3rem 0;
+}
+
+.rights {
+  padding-left: 1.5rem;
+}
+
+.termsprivacy {
+  display: inline-flex;
+}
+
+footer h5 {
+  padding-right: 1.5rem;
+}
+
+@media screen and (max-width:540px) {
+  .termsprivacy {
+    display: none;
+  }
+
+  .rights {
+    padding: 1rem 0 1rem 1.5rem;
+  }
+
+}
